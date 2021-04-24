@@ -1,0 +1,52 @@
+POST http://localhost:3800/api/Admin/upload HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "data": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+################
+POST http://localhost:3800/tabl/sheetData HTTP/1.1
+content-type: application/json
+
+{
+    "id": "ads",
+    "data": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+################
+POST http://localhost:3800/tabl/all HTTP/1.1
+content-type: application/json
+
+################
+POST http://localhost:3800/api/sheetData/new HTTP/1.1
+content-type: application/json
+
+################
+POST http://localhost:3800/tabl/createapi HTTP/1.1
+content-type: application/json
+
+{
+    "id":"asdfsdfsdf",
+    "type":{
+        "type":"HashedUrl",
+        "hash":"sdfasdf"
+    }
+}
+
+################
+POST http://localhost:3800/tabl/getapi HTTP/1.1
+content-type: application/json
+
+{
+    "id":"edf"
+}
+
+
+################
+GET http://localhost:3800/api/Admin HTTP/1.1
+
+################
+
+GET http://localhost:3800/tablapi/eee?hash=asdfasfasfasdf HTTP/1.1
